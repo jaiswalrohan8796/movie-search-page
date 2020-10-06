@@ -3,12 +3,55 @@ body {
     background-color:rgb(48, 48, 48);
     color: white;
 }
+.color-change-5x {
+	-webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+
 .jumbotron {
-    height: 7rem;
-    color: rgb(11, 252, 252);
-    background-color: rgb(74, 25, 107);
+  margin-bottom: 0;
+    height: 8rem;
+    color: whitesmoke;
+    background-color: transparent;
     border-radius: 5px;
 }
+
+
 .jumbotron h1 {
     font-size: 2.5rem;
     padding: 5px 5px;
@@ -81,7 +124,7 @@ div#movies.row {
   display: block;
   background-color: rgb(48, 48, 48);
   position: fixed;
-  right: 1vw;
+  right: 0vw;
   bottom: 0vh;
 }
 .footer h5 {
